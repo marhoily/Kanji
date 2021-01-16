@@ -1,29 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reactive.Disposables;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 using Newtonsoft.Json;
 using ReactiveUI;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : ReactiveWindow<AppViewModel>
+    public partial class MainWindow
     {
         public MainWindow()
         {
@@ -39,22 +24,30 @@ namespace WpfApp1
             // the subscription disposable to the CompositeDisposable.
             this.WhenActivated(disposableRegistration =>
             {
-                Task.Run(async () =>
-                {
-                    var set = JsonConvert.DeserializeObject<string[]>(
-                        File.ReadAllText("set.json"));
-                    await Dispatcher.BeginInvoke(new Action(() =>
-                        ViewModel.Set = set));
-                }).GetAwaiter();
+                Task.Run(WhenActivated).GetAwaiter();
                 this.OneWayBind(ViewModel, 
-                        viewModel => viewModel.CurrentTerm, 
+                        viewModel => viewModel.CurrentTerm.ToShow, 
                         view => view.CurrentTerm.Text)
                     .DisposeWith(disposableRegistration);
                 this.BindCommand(ViewModel, 
-                        viewModel => viewModel.NextTerm, 
-                        view => view.Next)
+                        viewModel => viewModel.MoveNext, 
+                        view => view.MoveNext)
                     .DisposeWith(disposableRegistration);
             });
         }
+
+        private async Task WhenActivated()
+        {
+            //var set = JsonConvert.DeserializeObject<string[]>(File.ReadAllText("set.json"));
+            var set = File.ReadAllLines(@"C:\git\Kanji\JLPT N5 Kanji List.txt")
+                .Select(l => new Card
+                {
+                    ToShow = l.Substring(0, 1),
+                    ToPronounce = l.Substring(l.IndexOf(':') +2)
+                })
+                .ToArray();
+            await Dispatcher.BeginInvoke(new Action(() => ViewModel.Set = set));
+        }
     }
+
 }

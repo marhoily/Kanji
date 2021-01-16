@@ -1,15 +1,9 @@
-﻿    using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-    using System.Reflection;
-    using System.Threading.Tasks;
+﻿using System.Reflection;
 using System.Windows;
-    using ReactiveUI;
-    using Splat;
+using ReactiveUI;
+using Splat;
 
-    namespace WpfApp1
+namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for App.xaml
