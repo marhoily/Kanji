@@ -3,5 +3,6 @@
 ################################################################################
 
 /.vs
-/Flashcards/bin/Debug
-/Flashcards/obj/Debug
+bin/
+obj/
+*.ncrunch*
