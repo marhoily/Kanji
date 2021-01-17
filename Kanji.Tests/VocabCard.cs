@@ -15,6 +15,7 @@ namespace Kanji.Tests
     {
         public static List<VocabCard> Read()
         {
+            // https://github.com/jamsinclair/open-anki-jlpt-decks.git
             using var text = File.OpenText(
                 @"C:\git\open-anki-jlpt-decks\src\n5.csv");
             var csvReader = new CsvReader(text,

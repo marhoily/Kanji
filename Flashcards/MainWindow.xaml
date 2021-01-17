@@ -61,7 +61,14 @@
                     Grid.Row="5" Grid.Column="1"
                        HorizontalAlignment="Center"
                     VerticalAlignment="Top"
-                       x:Name="PreviousTerm"/>    </Grid>
+                       x:Name="PreviousTerm"/>   
+     <TextBlock FontSize="24" FontWeight="SemiBold" 
+                   Margin="20" Foreground="DarkBlue"
+                    Grid.Row="5" Grid.Column="2"
+                       HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                       x:Name="CurrentIndex"/>   
+    </Grid>
 </reactiveui:ReactiveWindow>
     
 

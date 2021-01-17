@@ -1,112 +1,111 @@
-  Tale, Talk
-  Tale, Talk
-  Tale, Talk
-  Car
-  Car
-  Electricity
-  One, One Radical (no.1)
-  One, One Radical (no.1)
-  One, One Radical (no.1)
-  Seven
-  Seven
-  Seven
-  Three
-  Three
-  Three
-  Nine
-  Nine
-  Nine
-  Nine
-  Two, Two Radical (no. 7)
-  Two, Two Radical (no. 7)
-  Two, Two Radical (no. 7)
-  Five
-  Five
-  Five
-  Person
-  Person
-  Person
-  Now
-  Now
-  Before, Ahead, Previous, Future, Precedence
-  Before, Ahead, Previous, Future, Precedence
-  Eight, Eight Radical (no. 12)
-  Eight, Eight Radical (no. 12)
-  Eight, Eight Radical (no. 12)
-  Six
-  Six
-  Six
-  Exit, Leave, Go Out, Come Out, Put Out, Protrude
-  Exit, Leave, Go Out, Come Out, Put Out, Protrude
-  Exit, Leave, Go Out, Come Out, Put Out, Protrude
-  In Front, Before
-  In Front, Before
-  Ten
-  Ten
-  Four
-  Four
-  Four
-  Country
-  Country
-  Outside
-  Outside
-  Outside
-  Large, Big
-  Large, Big
-  Large, Big
-  Woman, Female
-  Child, Sign Of The Rat, 11pm-1am, First Sign Of Chinese Zodiac
-  Study, Learning, Science
-  Little, Small
-  Little, Small
-  Year, Counter For Years
-  Year, Counter For Years
-  Behind, Back, Later
-  Behind, Back, Later
-  Day, Sun, Japan, Counter For Days
-  Day, Sun, Japan, Counter For Days
-  Month, Moon
-  Month, Moon
-  Come, Due, Next, Cause, Become
-  Come, Due, Next, Cause, Become
-  Every
-  Spirit, Mind, Air, Atmosphere, Mood
-  Life, Genuine, Birth
-  Life, Genuine, Birth
-  Male
-  one day (duration)
-  five days; fifth day of the month
-  adult
-  foreign country; abroad
-  foreigner
-  student
-  today, this day
-  afternoon, P.M.
-  nine days; ninth day of the month
-  morning, A.M.
-  this year
-  this month
-  last month
-  teacher, professor; master; doctor
-  college; university
-  one day; first day of the month
-  electricity, (electric) light
-  electric train
-  a telephone
-  ten days; tenth day of the month
-  seven days; seventh day (of the month)
-  twenty days, twentieth (day of the month)
-  one month
-  one person
-  two people
-  two days; second day of the month
-;   every month, monthly
-  every day
-;   every year, yearly, annually
-  three days, third day of the month
-  six days; sixth day of month
-  eight days; eighth day of the month
-  four days; fourth day of the month
-  next month
-  next year
-
+﻿わ 話 Tale, Talk
+はなし 話 Tale, Talk
+はなす 話 Tale, Talk
+くるま 車 Car
+しゃ 車 Car
+でん 電 Electricity
+いち 一 One, One Radical (no.1)
+ひとつ 一 One, One Radical (no.1)
+ひと 一 One, One Radical (no.1)
+しち 七 Seven
+ななつ 七 Seven
+なの 七 Seven
+さん 三 Three
+み 三 Three
+みっつ 三 Three
+きゅう 九 Nine
+く 九 Nine
+ここの 九 Nine
+ここのつ 九 Nine
+に 二 Two, Two Radical (no. 7)
+ふたつ 二 Two, Two Radical (no. 7)
+ふた 二 Two, Two Radical (no. 7)
+いつ 五 Five
+いつつ 五 Five
+ご 五 Five
+と 人 Person
+じん 人 Person
+り 人 Person
+いま 今 Now
+こん 今 Now
+さき 先 Before, Ahead, Previous, Future, Precedence
+せん 先 Before, Ahead, Previous, Future, Precedence
+はち 八 Eight, Eight Radical (no. 12)
+やっつ 八 Eight, Eight Radical (no. 12)
+よう 八 Eight, Eight Radical (no. 12)
+むい 六 Six
+むっつ 六 Six
+ろく 六 Six
+だす 出 Exit, Leave, Go Out, Come Out, Put Out, Protrude
+で 出 Exit, Leave, Go Out, Come Out, Put Out, Protrude
+でる 出 Exit, Leave, Go Out, Come Out, Put Out, Protrude
+ぜん 前 In Front, Before
+まえ 前 In Front, Before
+じゅう 十 Ten
+とお 十 Ten
+し 四 Four
+よ 四 Four
+よっつ 四 Four
+こく 国 Country
+くに 国 Country
+がい 外 Outside
+そと 外 Outside
+ほか 外 Outside
+おおきい 大 Large, Big
+おお 大 Large, Big
+だい 大 Large, Big
+おんな 女 Woman, Female
+こ 子 Child, Sign Of The Rat, 11pm-1am, First Sign Of Chinese Zodiac
+がく 学 Study, Learning, Science
+ちいさい 小 Little, Small
+さ 小 Little, Small
+とし 年 Year, Counter For Years
+ねん 年 Year, Counter For Years
+あと 後 Behind, Back, Later
+うしろ 後 Behind, Back, Later
+にち 日 Day, Sun, Japan, Counter For Days
+か 日 Day, Sun, Japan, Counter For Days
+げつ 月 Month, Moon
+つき 月 Month, Moon
+くる 来 Come, Due, Next, Cause, Become
+らい 来 Come, Due, Next, Cause, Become
+まい 毎 Every
+き 気 Spirit, Mind, Air, Atmosphere, Mood
+うまれる 生 Life, Genuine, Birth
+せい 生 Life, Genuine, Birth
+おとこ 男 Male
+いちにち 一日 one day (duration)
+いつか 五日 five days; fifth day of the month
+おとな 大人 adult
+がいこく 外国 foreign country; abroad
+がいこくじん 外国人 foreigner
+がくせい 学生 student
+きょう 今日 today, this day
+ごご 午後 afternoon, P.M.
+ここのか 九日 nine days; ninth day of the month
+ごぜん 午前 morning, A.M.
+ことし 今年 this year
+こんげつ 今月 this month
+せんげつ 先月 last month
+せんせい 先生 teacher, professor; master; doctor
+だいがく 大学 college; university
+ついたち 一日 one day; first day of the month
+でんき 電気 electricity, (electric) light
+でんしゃ 電車 electric train
+でんわ 電話 a telephone
+とおか 十日 ten days; tenth day of the month
+なのか 七日 seven days; seventh day (of the month)
+はつか 二十日 twenty days, twentieth (day of the month)
+ひとつき 一月 one month
+ひとり 一人 one person
+ふたり 二人 two people
+ふつか 二日 two days; second day of the month
+まいげつ; まいつき 毎月 every month, monthly
+まいにち 毎日 every day
+まいねん; まいとし 毎年 every year, yearly, annually
+みっか 三日 three days, third day of the month
+むいか 六日 six days; sixth day of month
+ようか 八日 eight days; eighth day of the month
+よっか 四日 four days; fourth day of the month
+らいげつ 来月 next month
+らいねん 来年 next year

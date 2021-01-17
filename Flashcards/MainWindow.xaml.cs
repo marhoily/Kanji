@@ -48,6 +48,10 @@ namespace WpfApp1
                         viewModel => viewModel.PreviousTerm.ToPronounce,
                         view => view.PreviousTerm.Text)
                     .DisposeWith(disposableRegistration);
+                this.OneWayBind(ViewModel,
+                        viewModel => viewModel.CurrentTermIndex,
+                        view => view.CurrentIndex.Text)
+                    .DisposeWith(disposableRegistration);
                 this.BindCommand(ViewModel,
                         viewModel => viewModel.MoveNextCmd,
                         view => view.MoveNext)
@@ -57,7 +61,7 @@ namespace WpfApp1
 
         private async Task WhenActivated()
         {
-            var set = File.ReadAllLines(@"C:\git\Kanji\JLPT N5 Words.txt")
+            var set = File.ReadAllLines(@"C:\git\Kanji\WordsToStudy.txt")
                 .TakeWhile(l => l != "")
                 .Select(l => new Card
                 {
