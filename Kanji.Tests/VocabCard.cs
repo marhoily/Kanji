@@ -7,13 +7,13 @@ using CsvHelper.Configuration;
 
 namespace Kanji.Tests
 {
-    public record AnkiRecord(
+    public record VocabCard(
         string Expression,
         string Reading,
         string Meaning,
         string Tags)
     {
-        public static List<AnkiRecord> Read()
+        public static List<VocabCard> Read()
         {
             using var text = File.OpenText(
                 @"C:\git\open-anki-jlpt-decks\src\n5.csv");
@@ -23,7 +23,7 @@ namespace Kanji.Tests
                     PrepareHeaderForMatch = (name, _) => name.ToLower()
                 });
 
-            return csvReader.GetRecords<AnkiRecord>().ToList();
+            return csvReader.GetRecords<VocabCard>().ToList();
         }
     }
 }

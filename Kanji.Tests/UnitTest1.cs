@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using FluentAssertions;
-using Newtonsoft.Json;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -12,7 +10,7 @@ namespace Kanji.Tests
     public class UnitTest1
     {
         private readonly ITestOutputHelper _testOutputHelper;
-        private static readonly List<AnkiRecord> AnkiRecords = AnkiRecord.Read();
+        private static readonly List<VocabCard> AnkiRecords = VocabCard.Read();
 
         public UnitTest1(ITestOutputHelper testOutputHelper)
         {
@@ -29,21 +27,6 @@ namespace Kanji.Tests
             "ダヂヅデドナニヌネノハヒフヘホバビブベボパピプペポマミムメモ" +
             "ヤユ𛀀ヨラリルレロワヰヱヲンじャュョッー";
 
-        public record Card(
-            int? Strokes,
-            int? Grade,
-            int? Freq,
-            [JsonProperty("jlpt_old")] int? JlptOld,
-            [JsonProperty("jlpt_new")] int? JlptNew,
-            string[] Meanings,
-            [JsonProperty("readings_on")] string[] ReadingsOn,
-            [JsonProperty("readings_kun")] string[] ReadingsKun,
-            [JsonProperty("wk_level")] int? WkLevel,
-            [JsonProperty("wk_meanings")] string[] WkMeanings,
-            [JsonProperty("wk_readings_on")] string[] WkReadingsOn,
-            [JsonProperty("wk_readings_kun")] string[] WkReadingsKun,
-            [JsonProperty("wk_radicals")] string[] WkRadicals);
-     
 
         private static bool IsKana(char c) => Hiragana.Contains(c) || Katakana.Contains(c);
         private static bool IsKanaOnly(string str) => str.All(IsKana);
@@ -52,7 +35,7 @@ namespace Kanji.Tests
         public void Vocab()
         {
             AnkiRecords[1].Should().Be(
-                    new AnkiRecord(
+                    new VocabCard(
                         "会う", "あう", "to meet, to see",
                         "JLPT JLPT_3 JLPT_5 JLPT_N5"));
 
@@ -70,9 +53,7 @@ namespace Kanji.Tests
         [Fact]
         public void Kanji()
         {
-            JsonConvert
-                .DeserializeObject<Dictionary<string, Card>>(
-                    File.ReadAllText(@"C:\git\Kanji\kanji.json"))
+            KanjiCard.Read()
                 .Where(l => l.Value.JlptNew == 5)
                 .Select(l => l.Key)
                 .StrJoin("").Should()
