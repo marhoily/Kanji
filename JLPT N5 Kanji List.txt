@@ -1,17 +1,17 @@
-﻿母 (bo): a mother
-聞 (bun): to hear, ask, listen
-長 (chou): a long, leader, superior, senior
+﻿母 (bo): mother
+聞 (bun): hear, ask, listen
+長 (chou): long, leader, superior, senior
 中 (chuu): in, inside, middle, center
-円 (en): a circle, yen, round
+円 (en): circle, yen, round
 大 (dai): large, big
-男 (dan): a male
-電 (den): an electricity
-土 (do): a soil, earth, ground, Turkey
-読 (doku): to read
-父 (fu): a father
+男 (dan): male
+電 (den): electricity
+土 (do): soil, earth, ground, Turkey
+読 (doku): read
+父 (fu): father
 外 (gai): outside
-学 (gaku): to study, learning, science
-月 (getsu): a month, moon
+学 (gaku): study, learning, science
+月 (getsu): month, moon
 後 (go): behind, back, later
 五 (go): five
 午 (go): noon, sign of the horse

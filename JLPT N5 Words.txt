@@ -1,0 +1,705 @@
+﻿じかん 時間 time
+かいしゃ 会社 company
+でんわ 電話 phone call
+きょう 今日 today
+しゃしん 写真 photo
+ぜんぶ 全部 all
+だいがく 大学 university
+
+2. former central university of Kyoto (established under the ritsuryo system for the training of government administrators)  (see also: 大学寮, 国学; abbreviation)
+(click the word to view an additional 1 meaning and 2 forms, examples and links)
+5
+1
+おお
+大
+きな
+pre-noun adjectival (rentaishi)
+big; large; great  (see also: 小さな)
+(click the word for examples and links)
+5
+2
+ぶんしょう
+文章
+noun
+1. sentence; article; composition  (linguistics terminology)
+2. (writing) style
+(click the word for examples and links)
+5
+1
+もんだい
+問題
+noun
+1. question (e.g. on a test); problem
+2. problem (e.g. societal, political); question; issue; subject (e.g. of research); case; matter
+(click the word to view an additional 3 meanings, examples and links)
+5
+1
+ください
+expression
+1. please give me  (often written with kana only; honorific)
+2. please do for me  (after te-form of a verb or a noun prefixed with o- or go-; often written with kana only; honorific)
+(click the word to view an additional 1 form, examples and links)
+5
+2
+み
+見
+る
+ichidan verb, transitive verb
+1. to see; to look; to watch; to view; to observe
+2. to look over; to look on; to assess; to examine; to judge  (see also: 診る)
+(click the word to view an additional 4 meanings and 3 forms, examples and links)
+5
+1
+できる
+ichidan verb, intransitive verb
+1. to be able (in a position) to do; to be up to the task  (often written with kana only)
+2. to be ready; to be completed  (often written with kana only)
+(click the word to view an additional 3 forms, examples and links)
+5
+1
+りょこう
+旅行
+noun, 'suru' verb, 'no' adjective
+travel; trip
+(click the word for examples and links)
+5
+1
+かてい
+家庭
+noun, 'no' adjective
+home; family; household
+(click the word for examples and links)
+5
+1
+また
+adverb, conjunction, prefix
+again; and; also; still (doing something)  (often written with kana only)
+(click the word to view an additional 3 forms, examples and links)
+5
+1
+がっこう
+学校
+noun
+school
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+しつもん
+質問
+noun, 'suru' verb, 'no' adjective
+question; inquiry; enquiry
+(click the word for examples and links)
+5
+1
+ばんごう
+番号
+noun
+number; series of digits
+(click the word for examples and links)
+5
+1
+ことし
+今年
+adverbial noun (fukushitekimeishi), noun (temporal) (jisoumeishi)
+this year
+(click the word to view an additional 1 reading, examples and links)
+5
+1
+けっこん
+結婚
+noun, 'no' adjective, 'suru' verb
+marriage
+(click the word for examples and links)
+5
+1
+じぶん
+自分
+pronoun, 'no' adjective
+1. myself; yourself; oneself; himself; herself
+2. I; me
+(click the word to view an additional 1 meaning, examples and links)
+5
+1
+たか
+高
+い
+'i' adjective
+1. high; tall  (opposite: 低い; this meaning is restricted to form 高い)
+2. expensive
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+しんぶん
+新聞
+noun, 'no' adjective
+newspaper
+(click the word for examples and links)
+5
+1
+しごと
+仕事
+noun, 'suru' verb, 'no' adjective
+1. work; job; business; occupation; employment; vocation; task
+2. work  (physics terminology)
+(click the word for examples and links)
+5
+1
+がくせい
+学生
+noun
+student (esp. a university student)
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+ひと
+一
+つ
+numeric
+1. one
+noun
+2. for one thing  (often used in itemized lists)
+(click the word to view an additional 3 meanings and 3 forms, examples and links)
+5
+1
+なまえ
+名前
+noun
+1. name; full name  (see also: 名字, 姓)
+2. given name; first name
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+せんせい
+先生
+noun
+1. teacher; master; doctor  (honorific)
+suffix
+2. with names of teachers, etc. as an honorific  (honorific)
+(click the word to view an additional 1 reading and 1 meaning, examples and links)
+5
+1
+ひとり
+一人
+noun
+1. one person  (esp. 一人)
+2. alone; unmarried; solitary  (esp. 独り; this meaning is restricted to reading ひとり)
+(click the word to view an additional 1 reading and 3 forms, examples and links)
+5
+1
+べんり
+便利
+'na' adjective
+convenient; handy; useful
+(click the word for examples and links)
+5
+1
+えいが
+映画
+noun, 'no' adjective
+movie; film
+(click the word for examples and links)
+5
+1
+する
+irregular verb 'suru'
+1. to do  (often written with kana only)
+2. to cause to become; to make (into); to turn (into)  (often written with kana only)
+(click the word to view an additional 15 meanings and 1 form, examples and links)
+5
+1
+ページ
+noun
+page  (頁 is sometimes ぺえじ or ぺいじ; often written with kana only)
+(click the word to view an additional 1 form, examples and links)
+5
+1
+など
+particle
+1. et cetera; etc.; and the like; and so forth  (often written with kana only)
+2. or something  (after an approximate quote or vague suggestion; often written with kana only)
+(click the word to view an additional 1 meaning and 2 forms, examples and links)
+5
+4
+でも
+conjunction
+1. but; however; though; nevertheless; still; yet; even so
+particle
+2. even
+(click the word to view an additional 5 meanings, examples and links)
+5
+1
+なる
+'ru' godan verb, intransitive verb
+1. to become; to get; to grow; to be; to reach; to attain  (often written with kana only)
+2. to result in; to prove to be
+(click the word to view an additional 6 meanings and 2 forms, examples and links)
+5
+2
+では
+conjunction, interjection (kandoushi)
+then; well; so; well then  (see also: それでは)
+(click the word for examples and links)
+5
+4
+その
+pre-noun adjectival (rentaishi)
+1. that (something or someone distant from the speaker, close to the listener; actions of the listener, or ideas expressed or understood by the listener); the  (see also: 何の, 此の, 其れ, 彼の; often written with kana only)
+interjection (kandoushi)
+2. um...; er...; uh...
+(click the word to view an additional 1 form, examples and links)
+5
+3
+より
+particle
+1. than
+2. from; out of; since; at; on
+(click the word to view an additional 2 meanings, examples and links)
+5
+2
+スポーツ
+noun, 'no' adjective
+sport; sports
+(click the word for examples and links)
+5
+1
+よく
+adverb
+1. nicely; properly; well; skillfully; skilfully  (see also: 良い; often written with kana only)
+2. frequently; often  (often written with kana only)
+(click the word to view an additional 5 forms, examples and links)
+5
+3
+これ
+pronoun
+1. this (indicating an item near the speaker, the action of the speaker, or the current topic)  (see also: 何れ, 其れ, 彼; often written with kana only)
+2. this person (usu. indicating someone in one's in-group)  (humble)
+(click the word to view an additional 4 meanings and 7 forms, examples and links)
+5
+1
+いい
+ii 'i' adjective
+1. good; excellent; fine; nice; pleasant; agreeable  (see also: 良い)
+2. sufficient (can be used to turn down an offer); ready; prepared  (see also: 良い)
+(click the word to view an additional 2 meanings and 1 form, examples and links)
+5
+1
+うし
+後
+ろ
+noun
+back; behind; rear
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+りょうり
+料理
+noun, 'suru' verb
+1. cooking; cookery; cuisine
+2. dealing with something; handling; administration; management  (nuance of doing it easily)
+(click the word for examples and links)
+5
+1
+かぞく
+家族
+noun, 'no' adjective
+family; members of a family
+(click the word for examples and links)
+5
+1
+みんな
+adverb, noun
+1. all; everyone; everybody  (often written with kana only)
+2. everything  (often written with kana only)
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+ある
+irregular 'ru' godan verb, intransitive verb
+1. to be (usu. of inanimate objects); to exist; to live  (see also: 居る; often written with kana only)
+2. to have  (often written with kana only)
+(click the word to view an additional 3 meanings and 2 forms, examples and links)
+5
+1
+かわいい
+'i' adjective
+1. cute; adorable; charming; lovely; pretty  (often written with kana only)
+2. dear; precious; darling; pet  (often written with kana only)
+(click the word to view an additional 1 meaning and 4 forms, examples and links)
+5
+1
+まいにち
+毎日
+adverbial noun (fukushitekimeishi), noun (temporal) (jisoumeishi)
+every day
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+いみ
+意味
+noun, 'suru' verb
+meaning; significance
+(click the word for examples and links)
+5
+1
+おんがく
+音楽
+noun
+music; musical movement
+(click the word for examples and links)
+5
+1
+か
+買
+い
+もの
+物
+noun, 'no' adjective
+shopping; purchased goods
+(click the word to view an additional 3 forms, examples and links)
+5
+1
+とけい
+時計
+noun
+watch; clock; timepiece
+(click the word to view an additional 1 reading and 2 forms, examples and links)
+5
+1
+くに
+国
+noun
+1. country; state
+2. region
+(click the word to view an additional 4 meanings and 3 forms, examples and links)
+5
+1
+て
+手
+noun
+1. hand; arm  (see also: お手; occ. pronounced た when a prefix)
+2. forepaw; foreleg  (see also: お手; colloquialism)
+(click the word to view an additional 11 meanings, examples and links)
+5
+1
+じゅう
+十
+numeric
+ten  (拾 is used in legal documents)
+(click the word to view an additional 2 readings and 4 forms, examples and links)
+5
+1
+あと
+後
+noun, 'no' adjective
+1. behind; rear  (see also: 後ずさり)
+2. after; later  (see also: その後)
+(click the word to view an additional 6 meanings, examples and links)
+5
+1
+わたし
+私
+pronoun, 'no' adjective
+1. I; me
+noun, 'no' adjective
+2. private affairs; personal matter; secrecy  (this meaning is restricted to reading わたくし)
+(click the word to view an additional 1 reading, 1 meaning and 2 forms, examples and links)
+5
+1
+あたら
+新
+しい
+'i' adjective
+new; novel; fresh; recent; latest; up-to-date; modern
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+みち
+道
+noun
+1. road; street; way; path; course; route; lane
+2. distance; ways (e.g. "a long ways")
+(click the word to view an additional 4 meanings and 4 forms, examples and links)
+5
+1
+よん
+四
+numeric
+four  (肆 is used in legal documents)
+(click the word to view an additional 2 readings and 4 forms, examples and links)
+5
+1
+き
+木
+noun
+1. tree; shrub; bush
+2. wood; timber
+(click the word to view an additional 1 form, examples and links)
+5
+1
+ろく
+六
+numeric
+six  (陸 is used in legal documents)
+(click the word to view an additional 2 readings and 3 forms, examples and links)
+5
+1
+とし
+年
+noun
+1. year
+2. age; years
+(click the word to view an additional 1 meaning and 2 forms, examples and links)
+5
+1
+はち
+八
+numeric
+eight  (捌 is used in legal documents)
+(click the word to view an additional 1 reading and 3 forms, examples and links)
+5
+1
+なに
+何
+pronoun, 'no' adjective
+1. what
+prefix
+2. how many  (see also: 何か月; followed by a counter; this meaning is restricted to reading なん)
+(click the word to view an additional 1 reading, 4 meanings and 3 forms, examples and links)
+5
+1
+しち
+七
+numeric
+1. seven  (漆 is used in legal documents)
+prefix
+2. hepta-
+(click the word to view an additional 2 readings and 4 forms, examples and links)
+5
+1
+ひゃく
+百
+numeric
+100; hundred  (陌 and 佰 are used in legal documents)
+(click the word to view an additional 2 readings and 5 forms, examples and links)
+5
+1
+せん
+千
+numeric
+1,000; thousand  (阡 and 仟 are used in legal documents)
+(click the word to view an additional 1 reading and 5 forms, examples and links)
+5
+1
+うみ
+海
+noun
+sea; ocean; waters
+(click the word to view an additional 3 readings, examples and links)
+5
+1
+はな
+花
+noun
+1. flower; blossom; bloom; petal
+2. cherry blossom
+(click the word to view an additional 5 meanings and 2 forms, examples and links)
+5
+1
+いろ
+色
+noun
+1. colour; color
+2. complexion
+(click the word to view an additional 3 meanings, examples and links)
+5
+2
+すこ
+少
+し
+adverb, noun
+1. small quantity; little; few; something
+2. little while
+(click the word to view an additional 1 meaning and 3 forms, examples and links)
+5
+1
+ぎんこう
+銀行
+noun, 'no' adjective
+bank
+(click the word for examples and links)
+5
+1
+じどうしゃ
+自動車
+noun
+automobile
+(click the word for examples and links)
+5
+2
+へや
+部屋
+noun
+1. room; chamber
+2. apartment; flat; pad
+(click the word to view an additional 1 meaning, examples and links)
+5
+1
+こども
+子供
+noun
+child; children
+(click the word to view an additional 3 forms, examples and links)
+5
+1
+よい
+'i' adjective
+1. good; excellent; fine; nice; pleasant; agreeable  (also いい (all senses); often written with kana only)
+2. sufficient (can be used to turn down an offer); ready; prepared
+(click the word to view an additional 2 meanings and 6 forms, examples and links)
+5
+1
+くろ
+黒
+noun
+1. black  (see also: 白)
+2. black go stone
+(click the word to view an additional 1 meaning, examples and links)
+5
+1
+きゅう
+九
+numeric
+nine  (玖 is used in legal documents)
+(click the word to view an additional 4 readings and 4 forms, examples and links)
+5
+1
+きた
+北
+noun
+1. north
+2. the North; northern territories
+(click the word to view an additional 2 meanings, examples and links)
+5
+1
+にし
+西
+noun
+west
+(click the word for examples and links)
+5
+1
+ふたり
+二人
+noun
+two persons; two people; pair; couple
+(click the word to view an additional 1 reading and 3 forms, examples and links)
+5
+1
+みなみ
+南
+noun
+south
+(click the word for examples and links)
+5
+1
+もと
+下
+adverb
+under (esp. influence or guidance)  (sometimes written 元)
+(click the word to view an additional 2 forms, examples and links)
+5
+2
+いま
+今
+adverbial noun (fukushitekimeishi), noun
+now; the present time; just now; soon; immediately; (one) more
+(click the word for examples and links)
+5
+1
+でんき
+電気
+noun
+1. electricity
+2. (electric) light
+(click the word for examples and links)
+5
+1
+いっしょ
+一緒
+adverbial noun (fukushitekimeishi), noun, 'no' adjective
+1. together  (see also: 御一緒)
+2. at the same time
+(click the word to view an additional 1 meaning and 2 forms, examples and links)
+5
+1
+ニュース
+noun
+news
+(click the word to view an additional 1 form, examples and links)
+5
+1
+もっと
+adverb
+(some) more; even more; longer; further
+(click the word for examples and links)
+5
+1
+あし
+足
+noun
+1. foot  (esp. 足)
+2. leg  (esp. 脚,肢)
+(click the word to view an additional 5 meanings and 3 forms, examples and links)
+5
+1
+こえ
+声
+noun
+voice
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+にわ
+庭
+noun
+1. garden; yard; courtyard
+2. field (of action); area
+(click the word for examples and links)
+5
+1
+み
+観
+る
+ichidan verb, transitive verb
+1. to see; to look; to watch; to view; to observe
+2. to look over; to look on; to assess; to examine; to judge  (see also: 診る)
+(click the word to view an additional 4 meanings and 3 forms, examples and links)
+5
+1
+ともだち
+友達
+noun
+friend; companion
+(click the word to view an additional 2 forms, examples and links)
+5
+1
+あお
+青
+noun, 'no' adjective, 'na' adjective
+1. blue
+2. green
+(click the word to view an additional 3 meanings and 3 forms, examples and links)
+5
+1
+ことば
+言葉
+noun
+1. language; dialect  (see also: 言語)
+2. word; words; phrase; term; expression; remark  (see also: 単語)
+(click the word to view an additional 1 reading, 1 meaning and 3 forms, examples and links)
+5
+1
+ちず
+地図
+noun
+map

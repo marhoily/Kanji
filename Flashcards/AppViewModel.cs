@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Reactive;
+using System.Reactive.Linq;
 using System.Speech.Synthesis;
 using ReactiveUI;
 
@@ -18,41 +19,40 @@ namespace WpfApp1
     }
     public class AppViewModel : ReactiveObject
     {
-        public Card[] Set { get; set; }
         private readonly Random _rnd = new Random();
-        // ReactiveCommand allows us to execute logic without exposing any of the 
-        // implementation details with the View. The generic parameters are the 
-        // input into the command and its output. In our case we don't have any 
-        // input or output so we use Unit which in Reactive speak means a void type.
-        public ReactiveCommand<Unit, Unit> MoveNext { get; }
+        public ReactiveCommand<Unit, Unit> MoveNextCmd { get; }
         public AppViewModel()
         {
             _synthesizer = GetSpeechSynthesizer();
+            MoveNextCmd = ReactiveCommand.Create(MoveNext);
+            _currentTerm = this
+                .WhenAnyValue(x => x.CurrentTermIndex, x => x.SourceSet)
+                .Select(x => x.Item2 == null || x.Item1 == -1 ? null : x.Item2[x.Item1])
+                .ToProperty(this, x => x.CurrentTerm);
+                
+            _previousTerm = this
+                .WhenAnyValue(x => x.CurrentTermIndex, x => x.SourceSet)
+                .Select(x => x.Item2 == null || x.Item1 < 1 ? null : x.Item2[x.Item1-1])
+                .ToProperty(this, x => x.PreviousTerm);
 
-            MoveNext = ReactiveCommand.Create(() =>
-            {
-                if (Set != null)
-                {
-                    while (true)
-                    {
-                        var currentTerm = Set[_rnd.Next(Set.Length)];
-                        if (currentTerm != CurrentTerm)
-                        {
-                            CurrentTerm = currentTerm;
-                            break;
-                        }
-                    }
-
-                    Pronounce();
-                }
-            });
+            this.WhenAnyValue(x => x.CurrentTerm)
+                .Subscribe(_ => Pronounce());
         }
-
+        public void MoveNext()
+        {
+            if (SourceSet == null) return;
+            int nextVal = (CurrentTermIndex + 1) % SourceSet.Length;
+            if (nextVal == 0)
+                _rnd.Shuffle(SourceSet);
+            CurrentTermIndex = nextVal;
+            
+        }
         private void Pronounce()
         {
+            if (CurrentTerm == null) return;
             if (_currentPrompt != null)
                 _synthesizer.SpeakAsyncCancel(_currentPrompt);
-            _currentPrompt = _synthesizer.SpeakAsync(CurrentTerm.ToPronounce.Replace(",", ", or"));
+            _currentPrompt = _synthesizer.SpeakAsync(CurrentTerm.ToPronounce);
         }
 
         private static SpeechSynthesizer GetSpeechSynthesizer()
@@ -71,25 +71,32 @@ namespace WpfApp1
 
             synthesizer.SelectVoice(jp.VoiceInfo.Name);
 
-            // Configure the audio output.   
             synthesizer.SetOutputToDefaultAudioDevice();
             synthesizer.Rate = -2;
 
             return synthesizer;
         }
 
-        // In ReactiveUI, this is the syntax to declare a read-write property
-        // that will notify Observers, as well as WPF, that a property has 
-        // changed. If we declared this as a normal property, we couldn't tell 
-        // when it has changed!
-        private Card _currentTerm;
         private readonly SpeechSynthesizer _synthesizer;
         private Prompt _currentPrompt;
 
-        public Card CurrentTerm
+        private int _currentTermIndex = -1;
+        public int CurrentTermIndex
         {
-            get => _currentTerm;
-            set => this.RaiseAndSetIfChanged(ref _currentTerm, value);
+            get => _currentTermIndex;
+            set => this.RaiseAndSetIfChanged(ref _currentTermIndex, value);
         }
+        private Card[] _sourceSet;
+        public Card[] SourceSet
+        {
+            get => _sourceSet;
+            set => this.RaiseAndSetIfChanged(ref _sourceSet, value);
+        }
+        private readonly ObservableAsPropertyHelper<Card> _currentTerm;
+        public Card CurrentTerm => _currentTerm.Value;
+
+        private readonly ObservableAsPropertyHelper<Card> _previousTerm;
+        public Card PreviousTerm => _previousTerm.Value;
+
     }
 }
