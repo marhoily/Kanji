@@ -16,8 +16,9 @@ namespace Kanji.Tests
             "ダヂヅデドナニヌネノハヒフヘホバビブベボパピプペポマミムメモ" +
             "ヤユ𛀀ヨラリルレロワヰヱヲンじャュョッー";
 
+        public static readonly string Kana = Hiragana + Katakana;
 
-        public static bool IsKana(char c) => Hiragana.Contains(c) || Katakana.Contains(c);
+        public static bool IsKana(char c) => Kana.Contains(c);
         public static bool IsKanaOnly(string str) => str.All(IsKana);
     }
 }

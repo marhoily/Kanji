@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using FluentAssertions;
+using MoreLinq;
 using Xunit;
 using Xunit.Abstractions;
+using MoreLinq;
 
 namespace Kanji.Tests
 {
@@ -10,7 +13,7 @@ namespace Kanji.Tests
     {
         private static readonly List<VocabCard> AnkiRecords = VocabCard.Read();
         private static readonly Dictionary<string, KanjiCard> KanjiCards = KanjiCard.Read();
-        
+
         // ReSharper disable once NotAccessedField.Local
         private readonly ITestOutputHelper _output;
         public UnitTest1(ITestOutputHelper testOutputHelper) => _output = testOutputHelper;
@@ -33,7 +36,7 @@ namespace Kanji.Tests
                 .Should().Equal("生まれる", "学生", "生徒", "先生", "誕生日", "留学生");
         }
 
-       
+
         [Fact]
         public void Kanji()
         {
@@ -49,7 +52,65 @@ namespace Kanji.Tests
         [Fact]
         public void Vocab_With_Only_Lvl5_Kanji()
         {
+            var allowed = new HashSet<char>(KanjiCards
+                .Where(l => l.Value.JlptNew == 5)
+                .Select(l => l.Key.Single())
+                .Concat(Jap.Kana));
+            var words = AnkiRecords
+                .Where(r => r.Expression.All(allowed.Contains))
+                .ToList();
+            var kanjiList = words.SelectMany(x => x.Expression)
+                .Where(c => !Jap.IsKana(c))
+                .GroupBy(x => x)
+                .Where(x => x.Count() > 1)
+                .ToDictionary(x => x.Key, x => KanjiCards[x.Key.ToString()]);
+            var kanjiWithReadings = kanjiList.Select(kanji => words
+                .Where(word => word.Expression.Contains(kanji.Key))
+                .SelectMany(word => kanji.Value.Readings()
+                    .Where(reading => word.Reading.Contains(reading))
+                    .OrderByDescending(reading => reading.Length)
+                    .Take(1)
+                    .Select(reading => (kanji, reading, word)))
+                .Distinct())
+                .SelectMany(x => x)
+                .ToLookup(x => x.kanji.Key.ToString(), x => (x.kanji, x.reading, x.word));
+            kanjiWithReadings.Should().HaveCount(43);
+            var conflictingReadings = kanjiWithReadings
+                .SelectMany(x => x.Select(y => (y.reading, kanji: x.Key)))
+                .GroupBy(r => r.reading)
+                .SelectMany(r => r.GroupBy(u => u.kanji)
+                    .OrderByDescending(g => g.Count())
+                    .Skip(1))
+                .SelectMany(x => x)
+                .ToLookup(x => x.kanji, x => x.reading);
 
+            conflictingReadings.Should().HaveCount(3);
+
+            var interestingKanji = kanjiWithReadings
+                .SelectMany(x => x)
+                .Where(x => x.reading != x.word.Reading)
+                .Select(x => x.kanji.Key)
+                .Distinct()
+                .ToImmutableHashSet();
+            interestingKanji.Should().HaveCount(35);
+
+            var wordsToStudy =
+                 AnkiRecords
+                .Where(r => r.Expression.All(interestingKanji.Contains))
+                .Where(r => r.Expression.Length > 1)
+                .Select(w => $"{w.Reading} {w.Expression} {w.Meaning}")
+                .ToList();
+            wordsToStudy.Should().HaveCount(35);
+
+            var kanjiToStudy = interestingKanji
+                .Select(k => kanjiWithReadings[k.ToString()])
+                .SelectMany(x => x)
+                .DistinctBy(x => x.reading)
+                .Select(k => $"{k.reading} {k.kanji.Key} {k.kanji.Value.Meanings.StrJoin()}")
+                .ToList();
+            kanjiToStudy.Should().HaveCount(76);
+            _output.WriteLine(kanjiToStudy.StrJoin("\n"));
+            _output.WriteLine(wordsToStudy.StrJoin("\n"));
         }
     }
 }

@@ -25,5 +25,7 @@ namespace Kanji.Tests
 
             return csvReader.GetRecords<VocabCard>().ToList();
         }
+
+        public override string ToString() => $"{Expression} - {Meaning}";
     }
 }

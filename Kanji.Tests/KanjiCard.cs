@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace Kanji.Tests
@@ -25,5 +26,13 @@ namespace Kanji.Tests
                 .DeserializeObject<Dictionary<string, KanjiCard>>(
                     File.ReadAllText(@"C:\git\Kanji\kanji.json"));
         }
+
+        public IEnumerable<string> Readings() => 
+            ReadingsOn
+                .Concat(ReadingsKun)
+                .Select(r=> r.Replace("-", "").Replace(".", ""))
+                .Distinct();
+
+        public override string ToString() => $"{Meanings.First()}";
     }
 }
