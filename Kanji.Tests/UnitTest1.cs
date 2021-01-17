@@ -111,6 +111,10 @@ namespace Kanji.Tests
             kanjiToStudy.Should().HaveCount(76);
             _output.WriteLine(kanjiToStudy.StrJoin("\n"));
             _output.WriteLine(wordsToStudy.StrJoin("\n"));
+            // TODO: 午 is present in words, but not as a separate kanji. Why?
+            // TODO: why is "そと 外 Outside" pronounciation is there, while there's no word?
+            // TODO: list of kanji for selfcheck
+            // TODO: group kanji\words
         }
     }
 }
