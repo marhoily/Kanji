@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
 using System.Speech.Synthesis;
+using System.Threading;
 using ReactiveUI;
 
 namespace WpfApp1
 {
     public sealed class Card
     {
-        public string ToShow { get; set; }
+        public string Kanji { get; set; }
+        public string Meaning { get; set; }
         public string ToPronounce { get; set; }
         public override string ToString()
         {
-            return $"{ToShow}: {ToPronounce}";
+            return $"{Kanji}: {ToPronounce}";
         }
     }
     public class AppViewModel : ReactiveObject
@@ -29,10 +32,10 @@ namespace WpfApp1
                 .WhenAnyValue(x => x.CurrentTermIndex, x => x.SourceSet)
                 .Select(x => x.Item2 == null || x.Item1 == -1 ? null : x.Item2[x.Item1])
                 .ToProperty(this, x => x.CurrentTerm);
-                
+
             _previousTerm = this
                 .WhenAnyValue(x => x.CurrentTermIndex, x => x.SourceSet)
-                .Select(x => x.Item2 == null || x.Item1 < 1 ? null : x.Item2[x.Item1-1])
+                .Select(x => x.Item2 == null || x.Item1 < 1 ? null : x.Item2[x.Item1 - 1])
                 .ToProperty(this, x => x.PreviousTerm);
 
             this.WhenAnyValue(x => x.CurrentTerm)
@@ -45,7 +48,7 @@ namespace WpfApp1
             if (nextVal == 0)
                 _rnd.Shuffle(SourceSet);
             CurrentTermIndex = nextVal;
-            
+
         }
         private void Pronounce()
         {
@@ -57,23 +60,15 @@ namespace WpfApp1
 
         private static SpeechSynthesizer GetSpeechSynthesizer()
         {
-            var ci = new System.Globalization.CultureInfo("en-US");//"ja-JP");
-            System.Threading.Thread.CurrentThread.CurrentCulture = ci;
-            System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
+            var culture = new CultureInfo("ja-JP");
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
             var synthesizer = new SpeechSynthesizer();
-            var readOnlyCollection = synthesizer.GetInstalledVoices();
-            foreach (var installedVoice in readOnlyCollection)
-            {
-                Console.WriteLine(installedVoice.VoiceInfo.Culture);
-            }
-            var jp = readOnlyCollection
-                .First(v => v.VoiceInfo.Culture.DisplayName == ci.DisplayName);
-
-            synthesizer.SelectVoice(jp.VoiceInfo.Name);
-
+            synthesizer.SelectVoice(synthesizer.GetInstalledVoices()
+                .First(v => v.VoiceInfo.Culture.DisplayName == culture.DisplayName)
+                .VoiceInfo.Name);
             synthesizer.SetOutputToDefaultAudioDevice();
-            synthesizer.Rate = -2;
-
+            synthesizer.Rate = -6;
             return synthesizer;
         }
 

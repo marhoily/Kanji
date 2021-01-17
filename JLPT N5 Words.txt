@@ -1,274 +1,81 @@
-﻿じかん 時間 time
-かいしゃ 会社 company
-でんわ 電話 phone call
-きょう 今日 today
-しゃしん 写真 photo
-ぜんぶ 全部 all
-だいがく 大学 university
+﻿あたら 新 new
+うみ 海 ocean
+がく 学 study
+かん 間 interval
+き 木 tree
+くに 国 country
+けい 計 plot
+こ 今 now
+こう 校 exam
+じ 時 hour
+しち 七 seven 
+じゅう 十 ten  
+しん 新 new
+せい 生 life
+せん 千 thousand 
+だい 大 big
+たか 高 high
+て 手 hand
+でん 電 electricity
+とき 時 hour
+とし 年 year
+な 名 name
+なに 何 what
+はち 八 eight 
+はな 花 flower
+ひゃく 百 hundred  
+ぶん 聞 talk
+まい 毎 every
+まえ 前 first 
+み 見 to see
+みち 道 road
+よん 四 four  
+ろく 六 six  
+わ 話 talk
+わたし 私 I
 
-2. former central university of Kyoto (established under the ritsuryo system for the training of government administrators)  (see also: 大学寮, 国学; abbreviation)
-(click the word to view an additional 1 meaning and 2 forms, examples and links)
-5
-1
-おお
-大
-きな
-pre-noun adjectival (rentaishi)
-big; large; great  (see also: 小さな)
-(click the word for examples and links)
-5
-2
-ぶんしょう
-文章
-noun
-1. sentence; article; composition  (linguistics terminology)
-2. (writing) style
-(click the word for examples and links)
-5
-1
-もんだい
-問題
-noun
-1. question (e.g. on a test); problem
-2. problem (e.g. societal, political); question; issue; subject (e.g. of research); case; matter
-(click the word to view an additional 3 meanings, examples and links)
-5
-1
-ください
-expression
-1. please give me  (often written with kana only; honorific)
-2. please do for me  (after te-form of a verb or a noun prefixed with o- or go-; often written with kana only; honorific)
-(click the word to view an additional 1 form, examples and links)
-5
-2
-み
-見
-る
-ichidan verb, transitive verb
-1. to see; to look; to watch; to view; to observe
-2. to look over; to look on; to assess; to examine; to judge  (see also: 診る)
-(click the word to view an additional 4 meanings and 3 forms, examples and links)
-5
-1
-できる
-ichidan verb, intransitive verb
-1. to be able (in a position) to do; to be up to the task  (often written with kana only)
-2. to be ready; to be completed  (often written with kana only)
-(click the word to view an additional 3 forms, examples and links)
-5
-1
-りょこう
-旅行
-noun, 'suru' verb, 'no' adjective
-travel; trip
-(click the word for examples and links)
-5
-1
-かてい
-家庭
-noun, 'no' adjective
-home; family; household
-(click the word for examples and links)
-5
-1
-また
-adverb, conjunction, prefix
-again; and; also; still (doing something)  (often written with kana only)
-(click the word to view an additional 3 forms, examples and links)
-5
-1
-がっこう
-学校
-noun
-school
-(click the word to view an additional 2 forms, examples and links)
-5
-1
-しつもん
-質問
-noun, 'suru' verb, 'no' adjective
-question; inquiry; enquiry
-(click the word for examples and links)
-5
-1
-ばんごう
-番号
-noun
-number; series of digits
-(click the word for examples and links)
-5
-1
-ことし
-今年
-adverbial noun (fukushitekimeishi), noun (temporal) (jisoumeishi)
-this year
-(click the word to view an additional 1 reading, examples and links)
-5
-1
-けっこん
-結婚
-noun, 'no' adjective, 'suru' verb
-marriage
-(click the word for examples and links)
-5
-1
-じぶん
-自分
-pronoun, 'no' adjective
-1. myself; yourself; oneself; himself; herself
-2. I; me
-(click the word to view an additional 1 meaning, examples and links)
-5
-1
-たか
-高
-い
-'i' adjective
-1. high; tall  (opposite: 低い; this meaning is restricted to form 高い)
-2. expensive
-(click the word to view an additional 2 forms, examples and links)
-5
-1
-しんぶん
-新聞
-noun, 'no' adjective
-newspaper
-(click the word for examples and links)
-5
-1
-しごと
-仕事
-noun, 'suru' verb, 'no' adjective
-1. work; job; business; occupation; employment; vocation; task
-2. work  (physics terminology)
-(click the word for examples and links)
-5
-1
-がくせい
-学生
-noun
-student (esp. a university student)
-(click the word to view an additional 2 forms, examples and links)
-5
-1
-ひと
-一
-つ
-numeric
-1. one
-noun
-2. for one thing  (often used in itemized lists)
-(click the word to view an additional 3 meanings and 3 forms, examples and links)
-5
-1
-なまえ
-名前
-noun
-1. name; full name  (see also: 名字, 姓)
-2. given name; first name
-(click the word to view an additional 2 forms, examples and links)
-5
-1
-せんせい
-先生
-noun
-1. teacher; master; doctor  (honorific)
-suffix
-2. with names of teachers, etc. as an honorific  (honorific)
-(click the word to view an additional 1 reading and 1 meaning, examples and links)
-5
-1
-ひとり
-一人
-noun
-1. one person  (esp. 一人)
-2. alone; unmarried; solitary  (esp. 独り; this meaning is restricted to reading ひとり)
-(click the word to view an additional 1 reading and 3 forms, examples and links)
-5
-1
-べんり
-便利
-'na' adjective
-convenient; handy; useful
-(click the word for examples and links)
-5
-1
-えいが
-映画
-noun, 'no' adjective
-movie; film
-(click the word for examples and links)
-5
-1
-する
-irregular verb 'suru'
-1. to do  (often written with kana only)
-2. to cause to become; to make (into); to turn (into)  (often written with kana only)
-(click the word to view an additional 15 meanings and 1 form, examples and links)
-5
-1
-ページ
-noun
-page  (頁 is sometimes ぺえじ or ぺいじ; often written with kana only)
-(click the word to view an additional 1 form, examples and links)
-5
-1
-など
-particle
-1. et cetera; etc.; and the like; and so forth  (often written with kana only)
-2. or something  (after an approximate quote or vague suggestion; often written with kana only)
-(click the word to view an additional 1 meaning and 2 forms, examples and links)
-5
-4
-でも
-conjunction
-1. but; however; though; nevertheless; still; yet; even so
-particle
-2. even
-(click the word to view an additional 5 meanings, examples and links)
-5
-1
-なる
-'ru' godan verb, intransitive verb
-1. to become; to get; to grow; to be; to reach; to attain  (often written with kana only)
-2. to result in; to prove to be
-(click the word to view an additional 6 meanings and 2 forms, examples and links)
-5
-2
-では
-conjunction, interjection (kandoushi)
-then; well; so; well then  (see also: それでは)
-(click the word for examples and links)
-5
-4
-その
-pre-noun adjectival (rentaishi)
-1. that (something or someone distant from the speaker, close to the listener; actions of the listener, or ideas expressed or understood by the listener); the  (see also: 何の, 此の, 其れ, 彼の; often written with kana only)
-interjection (kandoushi)
-2. um...; er...; uh...
-(click the word to view an additional 1 form, examples and links)
-5
-3
-より
-particle
-1. than
-2. from; out of; since; at; on
-(click the word to view an additional 2 meanings, examples and links)
-5
-2
-スポーツ
-noun, 'no' adjective
-sport; sports
-(click the word for examples and links)
-5
-1
-よく
-adverb
-1. nicely; properly; well; skillfully; skilfully  (see also: 良い; often written with kana only)
-2. frequently; often  (often written with kana only)
-(click the word to view an additional 5 forms, examples and links)
-5
-3
+でんわ 電話 phone call
+だいがく 大学 university
+じかん 時間 time
+がっこう 学校 school
+ことし 今年 this year
+じぶん 自分 myself
+しんぶん 新聞 newspaper
+がくせい 学生 student 
+なまえ 名前 first name
+まいにち 毎日 every day
+とけい 時計 watch
+
+ひと 一 one
+せんせい 先生 teacher
+ひとり 一人 alone
+映画 えいが movie
+- その something or someone distant from the speaker
+- また again
+- ください please give me
+問題 もんだい problem
+写真 しゃしん photo
+きょう 今日 today
+- できる to be able to do
+ぶんしょう 文章 sentence
+かいしゃ 会社 company
+おお 大 big
+しごと 仕事 work
+べんり 便利 convenient
+する to do
+ページ page
+など et cetera
+でも however
+なる to become
+では well then
+よくnicely
+ぜんぶ 全部 all
+りょこう 旅行 travel
+かてい 家庭 home
+しつもん 質問 question
+ばんごう 番号 number
+けっこん 結婚 marriage
+
 これ
 pronoun
 1. this (indicating an item near the speaker, the action of the speaker, or the current topic)  (see also: 何れ, 其れ, 彼; often written with kana only)
@@ -327,13 +134,7 @@ irregular 'ru' godan verb, intransitive verb
 (click the word to view an additional 1 meaning and 4 forms, examples and links)
 5
 1
-まいにち
-毎日
-adverbial noun (fukushitekimeishi), noun (temporal) (jisoumeishi)
-every day
-(click the word to view an additional 2 forms, examples and links)
-5
-1
+
 いみ
 意味
 noun, 'suru' verb
@@ -358,36 +159,6 @@ shopping; purchased goods
 (click the word to view an additional 3 forms, examples and links)
 5
 1
-とけい
-時計
-noun
-watch; clock; timepiece
-(click the word to view an additional 1 reading and 2 forms, examples and links)
-5
-1
-くに
-国
-noun
-1. country; state
-2. region
-(click the word to view an additional 4 meanings and 3 forms, examples and links)
-5
-1
-て
-手
-noun
-1. hand; arm  (see also: お手; occ. pronounced た when a prefix)
-2. forepaw; foreleg  (see also: お手; colloquialism)
-(click the word to view an additional 11 meanings, examples and links)
-5
-1
-じゅう
-十
-numeric
-ten  (拾 is used in legal documents)
-(click the word to view an additional 2 readings and 4 forms, examples and links)
-5
-1
 あと
 後
 noun, 'no' adjective
@@ -396,115 +167,8 @@ noun, 'no' adjective
 (click the word to view an additional 6 meanings, examples and links)
 5
 1
-わたし
-私
-pronoun, 'no' adjective
-1. I; me
-noun, 'no' adjective
-2. private affairs; personal matter; secrecy  (this meaning is restricted to reading わたくし)
-(click the word to view an additional 1 reading, 1 meaning and 2 forms, examples and links)
-5
-1
-あたら
-新
-しい
-'i' adjective
-new; novel; fresh; recent; latest; up-to-date; modern
-(click the word to view an additional 2 forms, examples and links)
-5
-1
-みち
-道
-noun
-1. road; street; way; path; course; route; lane
-2. distance; ways (e.g. "a long ways")
-(click the word to view an additional 4 meanings and 4 forms, examples and links)
-5
-1
-よん
-四
-numeric
-four  (肆 is used in legal documents)
-(click the word to view an additional 2 readings and 4 forms, examples and links)
-5
-1
-き
-木
-noun
-1. tree; shrub; bush
-2. wood; timber
-(click the word to view an additional 1 form, examples and links)
-5
-1
-ろく
-六
-numeric
-six  (陸 is used in legal documents)
-(click the word to view an additional 2 readings and 3 forms, examples and links)
-5
-1
-とし
-年
-noun
-1. year
-2. age; years
-(click the word to view an additional 1 meaning and 2 forms, examples and links)
-5
-1
-はち
-八
-numeric
-eight  (捌 is used in legal documents)
-(click the word to view an additional 1 reading and 3 forms, examples and links)
-5
-1
-なに
-何
-pronoun, 'no' adjective
-1. what
-prefix
-2. how many  (see also: 何か月; followed by a counter; this meaning is restricted to reading なん)
-(click the word to view an additional 1 reading, 4 meanings and 3 forms, examples and links)
-5
-1
-しち
-七
-numeric
-1. seven  (漆 is used in legal documents)
-prefix
-2. hepta-
-(click the word to view an additional 2 readings and 4 forms, examples and links)
-5
-1
-ひゃく
-百
-numeric
-100; hundred  (陌 and 佰 are used in legal documents)
-(click the word to view an additional 2 readings and 5 forms, examples and links)
-5
-1
-せん
-千
-numeric
-1,000; thousand  (阡 and 仟 are used in legal documents)
-(click the word to view an additional 1 reading and 5 forms, examples and links)
-5
-1
-うみ
-海
-noun
-sea; ocean; waters
-(click the word to view an additional 3 readings, examples and links)
-5
-1
-はな
-花
-noun
-1. flower; blossom; bloom; petal
-2. cherry blossom
-(click the word to view an additional 5 meanings and 2 forms, examples and links)
-5
-1
+
+
 いろ
 色
 noun

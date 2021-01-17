@@ -12,9 +12,9 @@
     <Grid Margin="12">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -22,38 +22,41 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TextBlock FontSize="96" FontWeight="SemiBold" 
                     Grid.Row="1" Grid.Column="1"
-                   FontFamily="Chihaya Jyun"
+                   Grid.ColumnSpan="3"
+                   FontFamily="-Chihaya Jyun"
                        HorizontalAlignment="Center"
                    Margin="20"
                     VerticalAlignment="Top"
-                       x:Name="CurrentTerm"/>
-        <TextBlock FontSize="96" FontWeight="SemiBold" 
-                    Grid.Row="1" Grid.Column="2"
+                       x:Name="Kanji"/>
+        <TextBlock FontSize="32" FontWeight="SemiBold" 
+                    Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"
+                   TextWrapping="Wrap"
                    Margin="20"
-                   FontFamily="DartsFont"
+                   FontFamily="-DartsFont"
                        HorizontalAlignment="Center"
                     VerticalAlignment="Top"
-                       x:Name="CurrentTerm1"/>
-        <TextBlock FontSize="96" FontWeight="SemiBold" 
+                       x:Name="Meaning"/>
+        <!--<TextBlock FontSize="96" FontWeight="SemiBold" 
                    Margin="20"
                     Grid.Row="1" Grid.Column="3"
                    FontFamily="Hosofuwafont"
                        HorizontalAlignment="Center"
                     VerticalAlignment="Top"
-                       x:Name="CurrentTerm2"/>
+                       x:Name="CurrentTerm2"/>-->
         <Button x:Name="MoveNext" Content="MoveNext" Margin="5"
                     Padding="30,5"
-                    Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"
+                    Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
                     VerticalAlignment="Top"
                     FontSize="20"
                     HorizontalAlignment="Center"></Button>
      <TextBlock FontSize="48" FontWeight="SemiBold" 
                    Margin="20" Foreground="DarkBlue"
-                    Grid.Row="3" Grid.Column="1"
+                    Grid.Row="4" Grid.Column="1"
                        HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                        x:Name="PreviousTerm"/>    </Grid>

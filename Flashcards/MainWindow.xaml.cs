@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reactive;
@@ -31,19 +32,19 @@ namespace WpfApp1
                     .DisposeWith(disposableRegistration);
 
                 this.OneWayBind(ViewModel,
-                        viewModel => viewModel.CurrentTerm.ToShow,
-                        view => view.CurrentTerm.Text)
+                        viewModel => viewModel.CurrentTerm.Kanji,
+                        view => view.Kanji.Text)
                     .DisposeWith(disposableRegistration);
                 this.OneWayBind(ViewModel,
-                        viewModel => viewModel.CurrentTerm.ToShow,
-                        view => view.CurrentTerm1.Text)
+                        viewModel => viewModel.CurrentTerm.Meaning,
+                        view => view.Meaning.Text)
                     .DisposeWith(disposableRegistration);
+                //this.OneWayBind(ViewModel,
+                //        viewModel => viewModel.CurrentTerm.ToShow,
+                //        view => view.CurrentTerm2.Text)
+                //    .DisposeWith(disposableRegistration);
                 this.OneWayBind(ViewModel,
-                        viewModel => viewModel.CurrentTerm.ToShow,
-                        view => view.CurrentTerm2.Text)
-                    .DisposeWith(disposableRegistration);
-                this.OneWayBind(ViewModel,
-                        viewModel => viewModel.PreviousTerm.ToShow,
+                        viewModel => viewModel.PreviousTerm.ToPronounce,
                         view => view.PreviousTerm.Text)
                     .DisposeWith(disposableRegistration);
                 this.BindCommand(ViewModel,
@@ -55,14 +56,23 @@ namespace WpfApp1
 
         private async Task WhenActivated()
         {
-            var set = File.ReadAllLines(@"C:\git\Kanji\JLPT N5 Kanji List.txt")
+            var set = File.ReadAllLines(@"C:\git\Kanji\JLPT N5 Words.txt")
+                .TakeWhile(l => l != "")
                 .Select(l => new Card
                 {
-                    ToShow = l.Substring(0, 1),
-                    ToPronounce = l.Substring(l.IndexOf(':') + 2)
+                    ToPronounce = l.Split(' ')[0],
+                    Kanji = l.Split(' ')[1],
+                    Meaning = l.Split(' ').Skip(2).StrJoin(" ")
                 })
                 .ToArray();
             await Dispatcher.BeginInvoke(new Action(() => ViewModel.SourceSet = set));
+        }
+    }
+    public static class StringUtils
+    {
+        public static string StrJoin<T>(this IEnumerable<T> src, string separator = ", ")
+        {
+            return string.Join(separator, src);
         }
     }
 }
