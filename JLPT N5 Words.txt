@@ -8,11 +8,9 @@
 こ 今 now
 こう 校 exam
 じ 時 hour
-しち 七 seven 
-じゅう 十 ten  
 しん 新 new
 せい 生 life
-せん 千 thousand 
+せん 先 before
 だい 大 big
 たか 高 high
 て 手 hand
@@ -21,7 +19,6 @@
 とし 年 year
 な 名 name
 なに 何 what
-はち 八 eight 
 はな 花 flower
 ひゃく 百 hundred  
 ぶん 聞 talk
@@ -29,10 +26,9 @@
 まえ 前 first 
 み 見 to see
 みち 道 road
-よん 四 four  
-ろく 六 six  
 わ 話 talk
 わたし 私 I
+いま 今 now
 
 でんわ 電話 phone call
 だいがく 大学 university
@@ -45,9 +41,18 @@
 なまえ 名前 first name
 まいにち 毎日 every day
 とけい 時計 watch
+せんせい 先生 teacher
+はなみ　花見　cherry blossom viewing
+
+-- duplicate kanji
+でんき 電気 electricity
+
+-- not a part of an interesting word
+にし 西 west
+した 下 under 
+きた 北 north
 
 ひと 一 one
-せんせい 先生 teacher
 ひとり 一人 alone
 映画 えいが movie
 - その something or someone distant from the speaker
@@ -237,21 +242,7 @@ nine  (玖 is used in legal documents)
 (click the word to view an additional 4 readings and 4 forms, examples and links)
 5
 1
-きた
-北
-noun
-1. north
-2. the North; northern territories
-(click the word to view an additional 2 meanings, examples and links)
-5
-1
-にし
-西
-noun
-west
-(click the word for examples and links)
-5
-1
+
 ふたり
 二人
 noun
@@ -266,28 +257,7 @@ south
 (click the word for examples and links)
 5
 1
-もと
-下
-adverb
-under (esp. influence or guidance)  (sometimes written 元)
-(click the word to view an additional 2 forms, examples and links)
-5
-2
-いま
-今
-adverbial noun (fukushitekimeishi), noun
-now; the present time; just now; soon; immediately; (one) more
-(click the word for examples and links)
-5
-1
-でんき
-電気
-noun
-1. electricity
-2. (electric) light
-(click the word for examples and links)
-5
-1
+
 いっしょ
 一緒
 adverbial noun (fukushitekimeishi), noun, 'no' adjective
@@ -367,3 +337,4 @@ noun
 地図
 noun
 map
+https://www.kanshudo.com/collections/wikipedia_jlpt/WPJLPT-N5-1

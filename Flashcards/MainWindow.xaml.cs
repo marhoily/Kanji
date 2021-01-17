@@ -39,10 +39,10 @@ namespace WpfApp1
                         viewModel => viewModel.CurrentTerm.Meaning,
                         view => view.Meaning.Text)
                     .DisposeWith(disposableRegistration);
-                //this.OneWayBind(ViewModel,
-                //        viewModel => viewModel.CurrentTerm.ToShow,
-                //        view => view.CurrentTerm2.Text)
-                //    .DisposeWith(disposableRegistration);
+                this.OneWayBind(ViewModel,
+                        viewModel => viewModel.CurrentTerm.ToPronounce,
+                        view => view.Pronounciation.Text)
+                    .DisposeWith(disposableRegistration);
                 this.OneWayBind(ViewModel,
                         viewModel => viewModel.PreviousTerm.ToPronounce,
                         view => view.PreviousTerm.Text)
