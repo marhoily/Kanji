@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Reactive;
@@ -30,7 +29,7 @@ namespace WpfApp1
             MoveNextCmd = ReactiveCommand.Create(MoveNext);
             _currentTerm = this
                 .WhenAnyValue(x => x.CurrentTermIndex, x => x.SourceSet)
-                .Select(x => x.Item2 == null || x.Item1 == -1 ? null : x.Item2[x.Item1])
+                .Select(x => x.Item2 == null || x.Item1 == -1 ? new Card {ToPronounce = "<press any key>"} : x.Item2[x.Item1])
                 .ToProperty(this, x => x.CurrentTerm);
 
             _previousTerm = this
@@ -64,11 +63,12 @@ namespace WpfApp1
             Thread.CurrentThread.CurrentCulture = culture;
             Thread.CurrentThread.CurrentUICulture = culture;
             var synthesizer = new SpeechSynthesizer();
-            synthesizer.SelectVoice(synthesizer.GetInstalledVoices()
+            var voices = synthesizer.GetInstalledVoices();
+            synthesizer.SelectVoice(voices
                 .First(v => v.VoiceInfo.Culture.DisplayName == culture.DisplayName)
                 .VoiceInfo.Name);
             synthesizer.SetOutputToDefaultAudioDevice();
-            synthesizer.Rate = -6;
+            synthesizer.Rate = -3;
             return synthesizer;
         }
 

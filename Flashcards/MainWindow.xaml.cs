@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reactive;
@@ -7,7 +8,6 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using Newtonsoft.Json;
 using ReactiveUI;
 
 namespace WpfApp1
@@ -23,9 +23,10 @@ namespace WpfApp1
             {
                 Task.Run(WhenActivated).GetAwaiter();
 
+                Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
                 this.Events().KeyDown
                     .ThrottleFirst(
-                        TimeSpan.FromMilliseconds(800), 
+                        TimeSpan.FromMilliseconds(800),
                         RxApp.MainThreadScheduler)
                     .Select(_ => Unit.Default)
                     .InvokeCommand(ViewModel.MoveNextCmd)
@@ -65,7 +66,12 @@ namespace WpfApp1
                     Meaning = l.Split(' ').Skip(2).StrJoin(" ")
                 })
                 .ToArray();
-            await Dispatcher.BeginInvoke(new Action(() => ViewModel.SourceSet = set));
+            await Dispatcher.BeginInvoke(
+                new Action(() =>
+                {
+                    Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+                    ViewModel.SourceSet = set;
+                }));
         }
     }
     public static class StringUtils

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using Xunit;
@@ -9,27 +8,12 @@ namespace Kanji.Tests
 {
     public class UnitTest1
     {
-        private readonly ITestOutputHelper _testOutputHelper;
         private static readonly List<VocabCard> AnkiRecords = VocabCard.Read();
-
-        public UnitTest1(ITestOutputHelper testOutputHelper)
-        {
-            _testOutputHelper = testOutputHelper;
-        }
-
-        private const string Hiragana =
-            "あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてと" +
-            "だぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめも" +
-            "やゆ𛀁よらりるれろわゐゑをんゃょゅっ";
-
-        private const string Katakana =
-            "アイウエオカキクケコガギグゲゴサシスセソザジズゼゾタチツテト" +
-            "ダヂヅデドナニヌネノハヒフヘホバビブベボパピプペポマミムメモ" +
-            "ヤユ𛀀ヨラリルレロワヰヱヲンじャュョッー";
-
-
-        private static bool IsKana(char c) => Hiragana.Contains(c) || Katakana.Contains(c);
-        private static bool IsKanaOnly(string str) => str.All(IsKana);
+        private static readonly Dictionary<string, KanjiCard> KanjiCards = KanjiCard.Read();
+        
+        // ReSharper disable once NotAccessedField.Local
+        private readonly ITestOutputHelper _output;
+        public UnitTest1(ITestOutputHelper testOutputHelper) => _output = testOutputHelper;
 
         [Fact]
         public void Vocab()
@@ -53,13 +37,19 @@ namespace Kanji.Tests
         [Fact]
         public void Kanji()
         {
-            KanjiCard.Read()
+            KanjiCards
                 .Where(l => l.Value.JlptNew == 5)
                 .Select(l => l.Key)
                 .StrJoin("").Should()
                 .Be("一二九七人入八十三上下大女山川土千子小中五六円天日月木" +
                     "水火出右四左本白万今午友父北半外母休先名年気百男見車毎" +
                     "行西何来学金雨国東長前南後食校時高間話電聞語読生書");
+        }
+
+        [Fact]
+        public void Vocab_With_Only_Lvl5_Kanji()
+        {
+
         }
     }
 }
