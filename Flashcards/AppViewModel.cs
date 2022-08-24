@@ -45,7 +45,7 @@ namespace WpfApp1
             if (SourceSet == null) return;
             int nextVal = (CurrentTermIndex + 1) % SourceSet.Length;
             if (nextVal == 0)
-                _rnd.Shuffle(SourceSet);
+                SourceSet = _rnd.Shuffle2(SourceSet);
             CurrentTermIndex = nextVal;
 
         }
